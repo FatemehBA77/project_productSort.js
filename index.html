@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <header><h1>To Do List 2023</h1></header>
+    <section class="container">
+      <div class="form-container">
+        <form class="todo-form">
+          <input
+            type="text"
+            class="todo-input"
+            placeholder="what do you have planed?"
+          />
+          <button class="todo-button" type="submit">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          </button>
+        </form>
+        <div class="select">
+          <select name="todo" class="filter-todos">
+            <option value="all">all</option>
+            <option value="completed">completed</option>
+            <option value="uncompleted">uncompleted</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="todo-container">
+        <ul class="todolist">
+          <!-- <li class="todo">
+            <p class="todo__title">todo 1</p>
+            <span class="todo__createAt">1402/1/28</span>
+            <button><i class="todo__check fas fa-check-square"></i></button>
+            <button><i class="todo__remove fa fa-trash"></i></button>
+          </li> -->
+        </ul>
+      </div>
+      <div class="back-drop"></div>
+      <div class="show-modal">
+        <div class="modal">
+          <input class="title" placeholder="enter task" />
+          <button class="modal-comfirm">Complete</button>
+          <button class="modal-delete">Delete</button>
+        </div>
+      </div>
+    </section>
+    <script src="/main.js"></script>
+  </body>
+</html>
